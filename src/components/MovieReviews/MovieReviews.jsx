@@ -10,8 +10,8 @@ const MovieReviews = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const data = await getMovieReviews(movieId);
-        setReviews(data.results);
+        const data = await getMovieReviews(movieId); // возвращает уже массив
+        setReviews(data); // убрано .results
       } catch (error) {
         console.error('Failed to fetch reviews:', error);
       }

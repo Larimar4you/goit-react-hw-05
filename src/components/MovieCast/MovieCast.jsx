@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getMovieCast } from '../../services/api';
+import { getMovieCredits } from '../../services/api';
 import styles from './MovieCast.module.css';
 
 const MovieCast = () => {
@@ -10,7 +10,7 @@ const MovieCast = () => {
   useEffect(() => {
     const fetchCast = async () => {
       try {
-        const data = await getMovieCast(movieId);
+        const data = await getMovieCredits(movieId);
         setCast(data.cast);
       } catch (error) {
         console.error('Failed to fetch cast:', error);

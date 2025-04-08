@@ -13,6 +13,7 @@
   background-color: #1c1c1c;
   padding: 15px;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .author {
@@ -24,9 +25,12 @@
 .content {
   font-size: 14px;
   color: #ccc;
+  line-height: 1.5;
 }
 
 .noReviews {
   color: #999;
   font-style: italic;
+  text-align: center;
+  margin-top: 30px;
 }
