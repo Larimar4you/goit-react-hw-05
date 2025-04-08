@@ -1,0 +1,59 @@
+.container {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #0f0f0f;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.movieCard {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+}
+
+.moviePoster {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movieTitle {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #0d6efd;
+}
+
+.movieDate {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive tweaks */
+/* @media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+} */

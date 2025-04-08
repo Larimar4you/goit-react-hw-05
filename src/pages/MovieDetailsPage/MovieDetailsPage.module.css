@@ -1,0 +1,31 @@
+.container {
+  padding: 20px;
+  color: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+}
+
+.poster {
+  border-radius: 8px;
+  width: 300px;
+}
+
+.info {
+  max-width: 600px;
+}
+
+.additional {
+  margin-top: 30px;
+}

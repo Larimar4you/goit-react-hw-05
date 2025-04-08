@@ -1,0 +1,32 @@
+.container {
+  padding: 20px;
+  color: #fff;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  margin-bottom: 20px;
+  background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.noReviews {
+  color: #999;
+  font-style: italic;
+}
