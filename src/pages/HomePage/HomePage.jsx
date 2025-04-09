@@ -3,7 +3,6 @@ import styles from './HomePage.module.css';
 import React, { useEffect, useState } from 'react';
 import { getTrendyMovies } from '../../services/api';
 import { Link } from 'react-router-dom';
-import MovieList from '../../components/MovieList/MovieList';
 
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
@@ -29,7 +28,11 @@ const HomePage = () => {
           <div key={movie.id} className={styles.movieCard}>
             <Link to={`/movies/${movie.id}`}>
               <img
-                src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
+                src={
+                  movie.poster_path
+                    ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
+                    : 'https://placehold.co/200x300?text=No+Image'
+                }
                 alt={movie.title}
                 className={styles.moviePoster}
               />
