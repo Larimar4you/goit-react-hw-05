@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { searchMovies } from '../../services/api';
 import styles from './MoviesPage.module.css';
+import MovieList from '../../components/MovieList/MovieList';
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -46,13 +47,7 @@ const MoviesPage = () => {
         </button>
       </form>
 
-      <ul className={styles.list}>
-        {movies.map(movie => (
-          <li key={movie.id}>
-            <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
-          </li>
-        ))}
-      </ul>
+      {movies.length > 0 && <MovieList movies={movies} />}
     </div>
   );
 };
